@@ -1,9 +1,9 @@
-pragma solidity 0.8.11;
+pragma solidity >= 0.5.16 <= 0.8.11;
 
 contract Election {
   string public candidate;
 
-  constructor() {
+  constructor() public {
     candidate = "Candidate 1";
   }
 }
